@@ -4,7 +4,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class StackTest {
-   
+    /**
+     * this will check the stack has created or not.
+     */
+
     @Test
     public void IfStackIsCreatedShouldReturnTrue() {
         Node<Integer> myFirstNode = new Node<>(56);
