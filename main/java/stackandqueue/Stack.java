@@ -12,5 +12,9 @@ public class Stack<T> {
     public INode peek() {
         return myLinkedList.head;
     }
+    /* pop /delete the top node in stack */
+    public INode pop() {
+        return myLinkedList.pop();
+    }
 }
 
