@@ -12,4 +12,8 @@ public class Queue<T> {
     public INode peek() {
         return myLinkedList.head;
     }
+    /* dequeue node in the queue */
+    public INode dequeue() {
+        return myLinkedList.pop();
+    }
 }

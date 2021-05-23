@@ -17,4 +17,20 @@ public class QueueTest {
         INode peek = queue.peek();
         Assertions.assertEquals(peek, myFirstNode);
     }
+    /**
+     * this method will check the dequeue method.
+     */
+    @Test
+    public void InQueueIfNodeIsDequeuedShouldReturnTrue() {
+        Node<Integer> myFirstNode = new Node<>(56);
+        Node<Integer> mySecondNode = new Node<>(30);
+        Node<Integer> myThirdNode = new Node<>(70);
+        Queue<Integer> queue = new Queue<>();
+        queue.enqueue(myFirstNode);
+        queue.enqueue(mySecondNode);
+        queue.enqueue(myThirdNode);
+        INode dequeue = queue.dequeue();
+        INode peek = queue.peek();
+        Assertions.assertEquals(dequeue, myFirstNode);
+    }
 }
